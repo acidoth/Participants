@@ -1,0 +1,90 @@
+#!/usr/bin/python
+from core.dbhandler import *
+from core.transaction import *
+import threading
+
+
+class TransactionManager:
+    global transactionMap
+    transactionMap = dict()
+    global map_semaphore
+    global db_semaphore
+    map_semaphore = threading.Semaphore(1);
+    db_semaphore = threading.Semaphore(1);
+
+    def __init__(self):
+        self.currentTransaction = Transaction('0', '1', '1', '1', '1')
+        self.dbhandler = DBHandler(self.currentTransaction.getConnection())
+
+
+    def popTransaction(self, transactionid):
+        #print "Transaction ID:"+str(transactionid)
+        #print "I'm here to pop: %s "%  transactionMap.keys()
+        try:
+            map_semaphore.acquire()
+            self.currentTransaction = transactionMap[transactionid]
+            map_semaphore.release()
+        #print "Current Transaction Babe: "+str(self.currentTransaction.getTransactionId())
+        except KeyError:
+            #print "Aiyo its gone :("
+            return 'false'
+        else:
+            return 'true'
+
+    def pushTransaction(self, transactionid):
+        try:
+            map_semaphore.acquire()
+            transactionMap[self.currentTransaction.getTransactionId()] = self.currentTransaction
+            map_semaphore.release()
+        except KeyError:
+            return 'false'
+        else:
+            return 'true'
+
+
+    def commit(self):
+        print ('commit called from transactionmanager')
+        db_semaphore.acquire()
+        self.result = self.dbhandler.commit()
+        db_semaphore.release()
+        return self.result
+
+
+    def prepare(self):
+        print ('prepare called from transactionmanager')
+        db_semaphore.acquire()
+        self.dbhandler = DBHandler(self.currentTransaction.getConnection())
+        #print self.currentTransaction.getConnection()
+        self.resp = self.dbhandler.insertValues(self.currentTransaction.getFromDesti(),
+                                                self.currentTransaction.getToDesti(), self.currentTransaction.getDate(),
+                                                self.currentTransaction.getCustomerName())
+        db_semaphore.release()
+        return self.resp
+
+
+    def rollback(self):
+        print ('rollback called from transactionmanager')
+        self.dbhandler = DBHandler(self.currentTransaction.getConnection())
+        db_semaphore.acquire()
+        self.result = self.dbhandler.rollback()
+        db_semaphore.release()
+        return self.result
+
+    def putTransaction(self,Transaction):
+        #print "I'm here to put : " + Transaction.getTransactionId()
+        if self.currentTransaction.getTransactionId()=="0":
+            map_semaphore.acquire()
+            transactionMap[Transaction.getTransactionId()]=Transaction
+            map_semaphore.release()
+            self.currentTransaction=Transaction
+            #print "I'm here : %s "%  transactionMap.keys()
+            return True
+			
+        else:
+            self.currentTransaction=Transaction
+            self.pushTransaction(self.currentTransaction.getTransactionId())
+            #print "I'm here inside else: %s "%  transactionMap.keys()
+            return True
+
+
+

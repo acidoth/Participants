@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Maven: org.wso2.carbon:org.wso2.carbon.registry.api:4.0.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../carbon/kernel/4.0.0/core/org.wso2.carbon.registry.api/4.0.0/target/org.wso2.carbon.registry.api-4.0.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
