@@ -25,6 +25,7 @@ Contains registry core for all wso2 registry instances.
 4.0.5 : Contains updated registry core. 
 
 Guidelines to use the components :
+
 1. Download wso2 greg. (  http://dist2.wso2.org/products/governance-registry/4.5.3/wso2greg-4.5.3.zip )
 
 2. Extract it into 4 separate folders. ( 2 for thrift and 2 for soap participants)
