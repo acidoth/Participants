@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api
+END
+WSResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSResource.java
+END
+WSRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSRegistry.java
+END
+WSRegistryUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSRegistryUtils.java
+END
+WSCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSCollection.java
+END
+WSTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSTag.java
+END
+WSAssociation.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSAssociation.java
+END
+WSProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSProperties.java
+END
+WSMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSMap.java
+END
+WSTaggedResourcePath.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSTaggedResourcePath.java
+END
+WSResourceData.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSResourceData.java
+END
+WSComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSComment.java
+END
+WSLogEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSLogEntry.java
+END
+WSProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/wso2/!svn/ver/147326/carbon/platform/branches/4.0.0/components/registry/org.wso2.carbon.registry.ws.api/4.0.4/src/main/java/org/wso2/carbon/registry/ws/api/WSProperty.java
+END
