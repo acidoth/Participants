@@ -28,10 +28,11 @@ Guidelines to use the components :
 1. Download wso2 greg. (  http://dist2.wso2.org/products/governance-registry/4.5.3/wso2greg-4.5.3.zip )
 2. Extract it into 4 separate folders. ( 2 for thrift and 2 for soap participants)
 3. Using WSO2 greg documentation, configure backend database. 
-4. Open acidothinterface bundles and configure the constants with ip addresses. 
+4. Open acidothinterface bundles and configure the constants with ip addresses.
 5. Build the bundles in the same order given in the above descriptions. ( resolve necessary dependencies, you may need to configure system path of org.wso2.carbon.registry.acidothinterface bundles when building org.wso2.carbon.registry.ws.api bundles)
 6. Rename org....somename-0.0.0.jar to org....somename_0.0.0.jar for built results for ws-api, ws-client, core bundles and copy them and paste into relavent greg folder's GREG_HOME/repository/components/plugins. ( you may need to replace existing bundles with same name). 
-6. Copy acidothinterface into relavent greg folder's GREG_HOME/repository/components/dropins.
+7. Copy acidothinterface into relavent greg folder's GREG_HOME/repository/components/dropins.
+
 
 
 Now you may be able to use wso2greg participants.
