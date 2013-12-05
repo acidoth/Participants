@@ -3,6 +3,8 @@ Participants
 Contains Python and Java Participants used in the performance test.
 
 WSO2 GREG:
+
+
 Contains WSO2 Greg modules needed to run the performance test. 
 
 Directories:
@@ -42,4 +44,16 @@ Guidelines to use the components :
 
 
 
-Now you may be able to use wso2greg participants.
+Now you can to use wso2greg participants.
+
+
+
+Python: Contains Python modules needed to run the performance test. 
+
+Guidelines to use the component : 
+
+1. Open constants.py and add with ip address of running machine. 
+
+2. Start participant using Main.py
+
+Now you can use python participant.
